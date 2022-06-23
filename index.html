@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/realm-web/dist/bundle.iife.js"></script>
+    
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <link rel="stylesheet" href="main.css" />
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- algolia -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-theme-classic"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.5.1/dist/algoliasearch-lite.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-js"></script>
+    <script>
+    const { autocomplete, getAlgoliaResults } = window['@algolia/autocomplete-js'];
+    </script>
+
+    <title>Quick Recipes</title>
+</head>
+<body data-theme="dark">
+
+    <main class="container">
+        <h2 id="title">instant recipe generator </h2>
+        <div id="autocomplete" style="height:10px;"></div> <br/>
+        <button id="submit" disabled>add ingredients...</button>
+
+        <div id="ingredients"></div>
+        
+        <div class="loading" aria-busy="true"></div>
+        
+        <article class="recipe">
+            <img src="" />
+            <div>
+                <h2></h2>
+                <i></i> <br/> <br/>
+                <a target="_blank" rel="noopener noreferrer">Link</a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>made by <a target="_blank" rel="noopener noreferrer" href="https://github.com/huskynp">huskynp</a></p>
+    </footer>
+
+    <script src="autocomplete.js"></script>
+    <script src="search.js"></script>
+    
+</body>
+</html>

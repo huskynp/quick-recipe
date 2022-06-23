@@ -1,0 +1,79 @@
+html, body{
+    height: 100vh;
+}
+
+#autocomplete .aa-InputWrapperPrefix{
+    display: none;
+}
+
+#autocomplete .aa-Input{
+    margin: 0
+    ;
+}
+
+button[id="submit"]{
+    margin-top: 40px;
+}
+
+.aa-Item{
+    display: block !important;
+    line-height: 40px;
+}
+
+#ingredients{
+    display:flex;
+    gap: 1em;
+}
+
+.ingredient{
+    background-color: salmon;
+    display:flex;
+    gap: .5em;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+.ingredient>button{
+    all: initial;
+    color:white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor:pointer;
+}
+
+.ingredient>button:hover{
+    color: lightgray;
+}
+
+.recipe{
+    background-color:#376e27;
+    --block-spacing-vertical: 2em;
+    display: flex;
+    gap: 4em;
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.recipe > img{
+    max-width: 200px;
+    display: block;
+    max-height: 200px;
+    height: auto;
+    width: auto;
+    align-self: center;
+    border-radius: .25rem;
+}
+
+.loading{
+    margin-top:5em;
+    font-size:xx-large;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    padding: 1vh !important;
+    text-align: center;
+}
