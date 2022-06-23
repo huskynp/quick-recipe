@@ -18,7 +18,7 @@ const recipes = mongo.db('recipes').collection('recipes');
 const google_query_vars = (r_name) =>{ 
     return{
         cx: '538008222c9ca3a37',
-        key: 'AIzaSyBMpTGdGshLYxgqalfh0oxqb27aLvY8Kdc',
+        key: process.env.SEARCH_KEY,
         q: r_name,
         num: 1,
         searchType: 'image',
