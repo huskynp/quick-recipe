@@ -49,7 +49,7 @@ const showRecipe = async (recipe) => {
     $(".recipe>div>i").text(description);
     $(".recipe>div>a").attr('href', "https://www.food.com/recipe/"+recipe['_id'].toString());
     $(".recipe>img").attr('src', imageResults);
-    $(".recipe>img").attr('title', imageTitle);
+    $(".recipe>img").attr('data-tooltip', imageTitle);
 
     $(".loading").hide();
     $(".recipe").show();
